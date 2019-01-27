@@ -9,7 +9,7 @@ g++ -o dessin dessin.cc -Wl,--export-dynamic `pkg-config --cflags --libs gtk+-3.
 #include <cmath>
 #include <ctime>
 #include <iostream>
-#include "Simulator.h"
+#include "../core/Simulator.h"
 
 
 /* ms */
@@ -133,7 +133,7 @@ int main(int argc, char* argv[]) {
    p_builder = gtk_builder_new ();
 
    if (p_builder != NULL) // loading of xml/glade in p_builder
-      gtk_builder_add_from_file (p_builder, "View.glade", & p_err);
+      gtk_builder_add_from_file (p_builder, "src/interface/View.glade", & p_err);
    else
      return EXIT_FAILURE;
 

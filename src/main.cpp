@@ -24,13 +24,13 @@ int main()
 
 	s.particle::Simulator::push_dir(p9,1);
 	for (int i = 5; i < s.myElements.size(); i++){
-		std::cout << "Angle of [" << i << "] : " << s.myElements[i]->angle/PI << " * Pi rad" << std::endl;
+		std::cout << "Angle of [" << i << "]: " << s.myElements[i]->angle/PI << " * Pi rad" << std::endl;
 	}
 
 	while(s.particle::Simulator::maxDist(p9) > 2){
 		s.particle::Simulator::push_dir(p9,1);
 		s.particle::Simulator::step_lin(1);
-		std::cout << "Max dist : " << s.particle::Simulator::maxDist(p9) << std::endl;
+		std::cout << "Max dist: " << s.particle::Simulator::maxDist(p9) << std::endl;
 	}
 	
 	

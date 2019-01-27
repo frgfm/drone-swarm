@@ -287,7 +287,7 @@ void particle::Simulator::push_dir(double d) {
       if((myElements[i]->pos-target).norm() <= d + sqrt(myElements[i]->getR2())){
         // Not at target before
         if (!(myElements[i]->speed.x == 0)){
-          std::cout << "[" << i << "] : Target reached !" << std::endl;
+          std::cout << "[" << i << "] : Target reached!" << std::endl;
         }
         okTraj.push_back(i);
         myElements[i]->speed.x = 0;
@@ -300,7 +300,7 @@ void particle::Simulator::push_dir(double d) {
           myElements[i]->speed.x = 0.5*vmax;
           // Different target than previously
           if (!(myLock[i].second == target)) {
-            std::cout << "[" << i << "] : Target locked !" << std::endl;
+            std::cout << "[" << i << "] : Target locked!" << std::endl;
             // Align elmnt
             particle::Simulator::align(i,target);
             myLock[i].first = 0;
