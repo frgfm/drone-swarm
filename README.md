@@ -17,15 +17,13 @@ sudo apt-get update && sudo apt-get install build-essential libgtk-3-dev
 git clone https://github.com/frgfm/drone-swarm.git
 ```
 
-
-
 ## Usage
 
 As the core code is in C++, you will need to compile it with g++ (with c++11 support). If t his is not the case, please modify your own version of the Makefile.
 
 ```bash
-make all
-./demo
+cd drone-swarm
+make all && ./demo
 ```
 
 
