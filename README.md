@@ -26,7 +26,7 @@ cd drone-swarm
 make all && ./demo
 ```
 
-![slack_delete](static/images/drone-swarm.gif)
+![3agents_sim](static/images/drone-swarm.gif)
 
 
 
